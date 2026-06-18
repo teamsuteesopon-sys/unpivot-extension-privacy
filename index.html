@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets Unpivot - Chrome Extension</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Google Sans', Arial, sans-serif;
+      color: #202124;
+      background: #fff;
+    }
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: white;
+      color: #1a73e8;
+      padding: 10px 24px;
+      border-radius: 24px;
+      font-weight: bold;
+      margin-top: 24px;
+      font-size: 15px;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .feature {
+      flex: 1;
+      min-width: 220px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .feature .icon {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    .feature h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #1a73e8;
+    }
+    .feature p {
+      font-size: 14px;
+      color: #5f6368;
+      line-height: 1.6;
+    }
+    .how-it-works {
+      background: #e8f0fe;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .how-it-works h2 {
+      font-size: 28px;
+      margin-bottom: 32px;
+      color: #1a73e8;
+    }
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .step {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      min-width: 180px;
+      flex: 1;
+    }
+    .step .number {
+      background: #1a73e8;
+      color: white;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin: 0 auto 12px;
+    }
+    .step p { font-size: 14px; color: #5f6368; line-height: 1.6; }
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 13px;
+      color: #5f6368;
+      border-top: 1px solid #dadce0;
+    }
+    footer a { color: #1a73e8; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Google Sheets Unpivot</h1>
+    <p>Transform your pivoted spreadsheet data into a clean, analysis-ready format with just one click.</p>
+    <span class="badge">Chrome Extension</span>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <div class="icon">⚡</div>
+      <h3>One Click</h3>
+      <p>Unpivot any Google Sheets data instantly — no formulas, no copy-pasting.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🔒</div>
+      <h3>Secure</h3>
+      <p>Uses Google OAuth 2.0. Your data never leaves Google's servers.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📊</div>
+      <h3>Analysis Ready</h3>
+      <p>Results are written to a new sheet automatically, ready for charts and pivot tables.</p>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="number">1</div>
+        <p>Open any Google Sheet and click the extension icon</p>
+      </div>
+      <div class="step">
+        <div class="number">2</div>
+        <p>Enter your data range and select which columns to keep</p>
+      </div>
+      <div class="step">
+        <div class="number">3</div>
+        <p>Click "Unpivot Data" — results appear in a new sheet instantly</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Google Sheets Unpivot Chrome Extension &nbsp;|&nbsp;
+      <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
+      Contact: <a href="mailto:team.suteesopon@gmail.com">team.suteesopon@gmail.com</a>
+    </p>
+  </footer>
+
+</body>
+</html>
