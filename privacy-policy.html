@@ -1,144 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Google Sheets Unpivot Extension</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1 {
-            color: #1a73e8;
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #555;
-            margin-top: 30px;
-        }
-        .last-updated {
-            color: #666;
-            font-style: italic;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Google Sheets Unpivot</title>
+  <style>
+    body {
+      font-family: 'Google Sans', Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      color: #202124;
+      line-height: 1.7;
+    }
+    header {
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+    }
+    h1 {
+      color: #1a73e8;
+      font-size: 32px;
+      margin-bottom: 4px;
+    }
+    h2 {
+      color: #202124;
+      font-size: 20px;
+      margin-top: 36px;
+    }
+    .badge {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1a73e8;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    .card {
+      background: #f8f9fa;
+      border-left: 4px solid #1a73e8;
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #dadce0;
+      font-size: 13px;
+      color: #5f6368;
+    }
+    a { color: #1a73e8; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+  </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Last Updated: January 23, 2026</p>
-    
-    <h2>Introduction</h2>
-    <p>This privacy policy explains how the Google Sheets Unpivot Extension ("the Extension") collects, uses, and protects user data.</p>
-    
-    <h2>Data Collection</h2>
-    <p>The Extension collects the following data:</p>
-    <ul>
-        <li><strong>OAuth 2.0 Access Tokens:</strong> Used to authenticate with Google Sheets API to read and write spreadsheet data.</li>
-    </ul>
-    
-    <h2>Data Usage</h2>
-    <p>Authentication tokens are used exclusively for:</p>
-    <ul>
-        <li>Reading data from the selected range in your Google Sheets</li>
-        <li>Creating new sheets to display unpivoted results</li>
-        <li>Writing the transformed data to your spreadsheet</li>
-    </ul>
-    
-    <h2>Data Storage</h2>
-    <p>OAuth tokens are stored locally in your browser using Chrome's storage API. No data is transmitted to external servers owned or operated by the extension developer.</p>
-    
-    <h2>Data Sharing</h2>
-    <p>We do not:</p>
-    <ul>
-        <li>Share user data with third parties</li>
-        <li>Sell user data</li>
-        <li>Use user data for advertising or marketing</li>
-        <li>Transfer user data outside of Google's official APIs</li>
-    </ul>
-    
-    <h2>Data Security</h2>
-    <p>All authentication is handled through Google's secure OAuth 2.0 system. The Extension follows Chrome Web Store security best practices and does not execute remote code.</p>
-    
-    <h2>User Rights</h2>
-    <p>You can:</p>
-    <ul>
-        <li>Revoke the Extension's access at any time through your Google Account settings</li>
-        <li>Uninstall the Extension to remove all locally stored data</li>
-        <li>Request information about your data by contacting us</li>
-    </ul>
-    
-    <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated "Last Updated" date.</p>
-    
-    <h2>Contact</h2>
-    <p>For questions about this privacy policy or data practices, please contact: <strong>[YOUR EMAIL HERE]</strong></p>
+
+  <header>
+    <h1>Google Sheets Unpivot</h1>
+    <p>A Chrome Extension for transforming your spreadsheet data</p>
+    <span class="badge">Privacy Policy</span>
+  </header>
+
+  <div class="card">
+    <strong>Summary:</strong> This extension does not collect, store, or sell any of your personal data. Ever.
+  </div>
+
+  <h2>1. What This Extension Does</h2>
+  <p>
+    Google Sheets Unpivot is a Chrome Extension that allows users to unpivot (transpose) data in Google Sheets with one click. It reads data from your selected spreadsheet range and writes the unpivoted result to a new sheet — all within your own Google account.
+  </p>
+
+  <h2>2. Data Collection</h2>
+  <p>We do <strong>not</strong> collect, store, transmit, or share any personal data. Specifically:</p>
+  <ul>
+    <li>We do not store your spreadsheet data</li>
+    <li>We do not log your activity</li>
+    <li>We do not use cookies or tracking</li>
+    <li>We do not send your data to any external server</li>
+  </ul>
+
+  <h2>3. Google Account Access</h2>
+  <p>
+    This extension uses Google OAuth 2.0 to authenticate you securely. This allows it to read and write to your Google Sheets on your behalf. The OAuth token is managed entirely by Chrome and Google — we never see or store your credentials.
+  </p>
+
+  <h2>4. Permissions Used</h2>
+  <ul>
+    <li><strong>identity</strong> — to authenticate you via your Google account</li>
+    <li><strong>activeTab</strong> — to detect which Google Sheet you have open</li>
+    <li><strong>sheets.googleapis.com</strong> — to read your data and write the unpivoted result</li>
+  </ul>
+
+  <h2>5. Third Parties</h2>
+  <p>
+    We do not share your data with any third parties. The only external service used is the Google Sheets API, which is operated by Google under their own privacy policy.
+  </p>
+
+  <h2>6. Contact</h2>
+  <p>
+    If you have any questions about this privacy policy, please contact us at:
+    <a href="mailto:team.suteesopon@gmail.com">team.suteesopon@gmail.com</a>
+  </p>
+
+  <footer>
+    <p>Last updated: June 2026 &nbsp;|&nbsp; Google Sheets Unpivot Chrome Extension</p>
+  </footer>
+
 </body>
 </html>
-```
-
-4. **Replace `[YOUR EMAIL HERE]`** with your actual email
-5. Scroll down and click **"Commit new file"**
-
-### Step 4: Enable GitHub Pages
-1. In your repository, click **"Settings"** (tab at the top)
-2. Scroll down to **"Pages"** (left sidebar under "Code and automation")
-3. Under **"Source"**, select **"Deploy from a branch"**
-4. Under **"Branch"**, select **"main"** and **"/ (root)"**
-5. Click **"Save"**
-
-### Step 5: Get Your URL
-1. Wait 1-2 minutes for GitHub to deploy
-2. Refresh the Pages settings page
-3. You'll see: **"Your site is live at https://[your-username].github.io/unpivot-extension-privacy/"**
-4. Your privacy policy URL is:
-```
-   https://[your-username].github.io/unpivot-extension-privacy/privacy-policy.html
-```
-
-**Copy this URL** and paste it into the Chrome Web Store submission form!
-
----
-
-## Method 2: Google Sites (Visual, No Coding)
-
-### Step 1: Create a Google Site
-1. Go to https://sites.google.com
-2. Click **"Blank"** to create a new site
-3. Title: "Google Sheets Unpivot - Privacy Policy"
-
-### Step 2: Add Privacy Policy Content
-1. Click on the text area
-2. Copy and paste this text:
-```
-Privacy Policy
-
-Last Updated: January 23, 2026
-
-Introduction
-This privacy policy explains how the Google Sheets Unpivot Extension collects, uses, and protects user data.
-
-Data Collection
-The Extension collects OAuth 2.0 Access Tokens to authenticate with Google Sheets API.
-
-Data Usage
-Authentication tokens are used exclusively for reading and writing spreadsheet data to perform unpivot operations.
-
-Data Storage
-OAuth tokens are stored locally in your browser using Chrome's storage API. No data is transmitted to external servers.
-
-Data Sharing
-We do not share, sell, or transfer user data to third parties. Data is only used to communicate with Google Sheets API.
-
-Data Security
-All authentication is handled through Google's secure OAuth 2.0 system.
-
-User Rights
-You can revoke access at any time through your Google Account settings or by uninstalling the extension.
-
-Contact
-For questions, please contact: [team.suteesopon@gmail.com]
